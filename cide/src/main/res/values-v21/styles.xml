@@ -1,0 +1,31 @@
+<resources>>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="selection_foreground">@color/accent_material_dark</item>
+        <item name="selection_background">@color/accent_material_light</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:listPreferredItemPaddingStart">4dp</item>
+    </style>
+
+    <style name="AppTheme.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="selection_foreground">@color/accent_material_light</item>
+        <item name="selection_background">@color/accent_material_dark</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:listPreferredItemPaddingStart">4dp</item>
+    </style>
+
+    <style name="Finder_white_v21" parent="Finder_white">
+        <item name="android:switchTextOn">"L_ON"</item>
+        <item name="android:switchTextOff">"L_OFF"</item>
+    </style>
+
+    <style name="Finder_black_v21" parent="Finder_black">
+        <item name="android:switchTextOn">"D_ON"</item>
+        <item name="android:switchTextOff">"L_ON"</item>
+    </style>
+</resources>

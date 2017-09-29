@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="theme">
+        <item>白天</item>
+        <item>晚上</item>
+    </string-array>
+    <string-array name="ids">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="codeTheme">
+        <item>明亮</item>
+        <item>黑暗</item>
+        <item>阳光</item>
+        <item>昏暗</item>
+        <item>黑曜石</item>
+        <item>系统</item>
+        <item>重设背景色</item>
+    </string-array>
+    <string-array name="codeThemeId">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="font">
+        <item>默认</item>
+        <item>衬线</item>
+        <item>无衬线</item>
+        <item>等宽</item>
+        <item>Courier</item>
+        <item>Menlo-Regular</item>
+    </string-array>
+    <string-array name="font_ids">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="fontsize">
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>
+        <item>32</item>
+        <item>34</item>
+        <item>36</item>
+    </string-array>
+    <integer-array name="format_id">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </integer-array>
+    <string-array name="format">
+        <item>llvm</item>
+        <item>chromium</item>
+        <item>mozilla</item>
+        <item>google</item>
+        <item>webkit</item>
+        <item>gnu</item>
+        <item>none</item>
+    </string-array>
+    <string-array name="format_braces">
+        <item>Attach</item>
+        <item>Linux</item>
+        <item>Stroustrup</item>
+        <item>Allman</item>
+        <item>GNU</item>
+    </string-array>
+    <integer-array name="format_braces_id">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </integer-array>
+    <string-array name="tabs">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>12</item>
+        <item>16</item>
+    </string-array>
+    <string-array name="diagonal">
+        <item>下划线及文字</item>
+        <item>下划线</item>
+        <item>文字</item>
+        <item>无</item>
+    </string-array>
+    <string-array name="diagonalIds">
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="diagonalTimes">
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>750</item>
+        <item>1000</item>
+        <item>1250</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="diagonalTimesText">
+        <item>100ms</item>
+        <item>200ms</item>
+        <item>300ms</item>
+        <item>400ms</item>
+        <item>500ms</item>
+        <item>750ms</item>
+        <item>1000ms</item>
+        <item>1250ms</item>
+        <item>1500ms</item>
+        <item>2000ms</item>
+        <item>不启用</item>
+    </string-array>
+    <string-array name="type_ext">
+        <item>.c</item>
+        <item>.cpp</item>
+        <item>.h</item>
+        <item>.hpp</item>
+        <item>文件夹</item>
+        <item>无扩展名</item>
+    </string-array>
+    <string-array name="columnLimit">
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+        <item>110</item>
+        <item>120</item>
+        <item>130</item>
+        <item>140</item>
+        <item>150</item>
+        <item>160</item>
+    </string-array>
+</resources>

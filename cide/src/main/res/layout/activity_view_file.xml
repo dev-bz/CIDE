@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="org.free.cide.ide.ViewFileActivity">
+
+        <FrameLayout
+            style="?android:attr/actionBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionName="include">
+
+            <include
+                layout="@android:layout/simple_list_item_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+        <org.free.cide.views.EditField
+            android:id="@+id/textField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:transitionName="code"
+            app:fastDraw="true"
+            app:readOnly="true"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/functionList"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="?attr/colorPrimary"/>
+</android.support.v4.widget.DrawerLayout>

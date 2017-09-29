@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/quickKeyBarButton"
+          android:layout_width="30.0dip"
+          android:layout_height="40.0dip"
+          android:background="?android:selectableItemBackground"
+          android:clickable="true"
+          android:gravity="center"
+          android:onClick="quickKey"
+          android:text="{"
+          android:textSize="25.0dip"/><!-- android:textColor="?color_key"-->

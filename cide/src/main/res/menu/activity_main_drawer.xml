@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/new_file"
+        android:title="@string/create_new"/>
+    <item
+        android:id="@+id/nav_goto"
+        android:title="@string/paste_dir"/>
+    <item
+        android:id="@+id/add_to_project"
+        android:title="@string/add_to_project"/>
+    <item
+        android:id="@+id/nav_copyName"
+        android:title="@string/copy_file_name"/>
+    <item
+        android:id="@+id/nav_copy"
+        android:title="@string/copy_selected_path"/>
+    <!--  <item android:title="@string/file_info"/>-->
+    <item
+        android:id="@+id/nav_send"
+        android:title="@string/send_file"/>
+    <item
+        android:id="@+id/nav_delete"
+        android:title="@string/delete"/>
+</menu>

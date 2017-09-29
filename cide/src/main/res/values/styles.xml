@@ -1,0 +1,81 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:buttonStyleToggle">?attr/replaceToggle</item>
+        <item name="moveRight">@drawable/ic_keyboard_arrow_right_white_24dp</item>
+        <item name="moveLeft">@drawable/ic_keyboard_arrow_left_white_24dp</item>
+        <item name="ic_more">@drawable/ic_more_vert_black_24dp</item>
+        <item name="findStyle">@style/Finder_white</item>
+        <item name="edit_undo">@drawable/ic_undo_white_24dp</item>
+        <item name="edit_redo">@drawable/ic_redo_white_24dp</item>
+        <item name="edit_font_plus">@drawable/ic_exposure_plus_2_white_24dp</item>
+        <item name="edit_font_minus">@drawable/ic_exposure_minus_2_white_24dp</item>
+        <item name="edit_code_fix">@drawable/ic_done_white_24dp</item>
+        <item name="edit_code_rename">@drawable/ic_settings_ethernet_white_24dp</item>
+        <item name="folder">@drawable/ic_folder_white_24dp</item>
+        <item name="folder_open">@drawable/ic_folder_open_white_24dp</item>
+        <item name="file">@drawable/ic_insert_drive_file_white_24dp</item>
+        <item name="folder_disable">@drawable/ic_folder_grey600_24dp</item>
+        <item name="file_disable">@drawable/ic_insert_drive_file_grey600_24dp</item>
+        <item name="icon_open_keys">@drawable/ic_more_vert_white_24dp</item>
+        <item name="icon_close_keys">@drawable/ic_menu_close_clear_cancel_white</item>
+        <!--<item name="drawable_keybar">@drawable/quickkeybar</item>-->
+        <!--<item name="color_key">@color/quickkey</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light">
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="moveRight">@drawable/ic_keyboard_arrow_right_black_24dp</item>
+        <item name="moveLeft">@drawable/ic_keyboard_arrow_left_black_24dp</item>
+        <item name="ic_more">@drawable/ic_more_vert_white_24dp</item>
+        <item name="findStyle">@style/Finder_black</item>
+        <item name="edit_undo">@drawable/ic_undo_black_24dp</item>
+        <item name="edit_redo">@drawable/ic_redo_black_24dp</item>
+        <item name="edit_font_plus">@drawable/ic_exposure_plus_2_black_24dp</item>
+        <item name="edit_font_minus">@drawable/ic_exposure_minus_2_black_24dp</item>
+        <item name="edit_code_fix">@drawable/ic_done_black_24dp</item>
+        <item name="edit_code_rename">@drawable/ic_settings_ethernet_black_24dp</item>
+        <item name="folder">@drawable/ic_folder_black_24dp</item>
+        <item name="folder_open">@drawable/ic_folder_open_black_24dp</item>
+        <item name="file">@drawable/ic_insert_drive_file_black_24dp</item>
+        <item name="folder_disable">@drawable/ic_folder_grey600_24dp</item>
+        <item name="file_disable">@drawable/ic_insert_drive_file_grey600_24dp</item>
+        <item name="icon_open_keys">@drawable/ic_more_vert_black_24dp</item>
+        <item name="icon_close_keys">@drawable/ic_menu_close_clear_cancel</item>
+        <!--<item name="drawable_keybar">@drawable/quickkeybar_material_light</item>-->
+        <!--<item name="color_key">@color/quickkey_light</item>-->
+    </style>
+
+    <style name="Finder_black">
+        <item name="replaceToggle">@drawable/find_toggle_light</item>
+        <item name="replace">@drawable/ic_done_black_24dp</item>
+        <item name="replaceAll">@drawable/ic_done_all_black_24dp</item>
+        <item name="findNext">@drawable/ic_keyboard_arrow_right_black_24dp</item>
+        <item name="findPrecious">@drawable/ic_keyboard_arrow_left_black_24dp</item>
+        <item name="findSetting">@drawable/ic_settings_black_24dp</item>
+    </style>
+
+    <style name="Finder_white">
+        <item name="replaceToggle">@drawable/find_toggle_dark</item>
+        <item name="replace">@drawable/ic_done_white_24dp</item>
+        <item name="replaceAll">@drawable/ic_done_all_white_24dp</item>
+        <item name="findNext">@drawable/ic_keyboard_arrow_right_white_24dp</item>
+        <item name="findPrecious">@drawable/ic_keyboard_arrow_left_white_24dp</item>
+        <item name="findSetting">@drawable/ic_settings_white_24dp</item>
+    </style>
+
+    <style name="FileListItemStyle">
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FreeScrollingTextField">
+        <attr name="fastDraw" format="boolean"/>
+        <attr name="readOnly" format="boolean"/>
+        <attr name="selectStart" format="integer"/>
+        <attr name="selectEnd" format="integer"/>
+    </declare-styleable>
+</resources>

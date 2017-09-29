@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/find_panel"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:baselineAligned="false"
+              android:theme="?attr/findStyle"
+              android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+
+            <ImageButton
+                android:id="@+id/find_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/find_toggle"
+                android:onClick="hideReplacePanel"
+                android:src="?attr/replaceToggle"/>
+
+            <EditText
+                android:id="@+id/find_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/find"
+                android:imeOptions="flagNoExtractUi"
+                android:singleLine="true"/>
+
+            <ImageButton
+                android:id="@+id/find_precious"
+                style="?attr/findStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/find_precious"
+                android:src="?attr/findPrecious"/>
+
+            <ImageButton
+                android:id="@+id/find_next"
+                style="?attr/findStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/find_next"
+                android:src="?attr/findNext"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/replace_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <ImageButton
+                style="?attr/findStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/find_setting"
+                android:onClick="clickFindSetting"
+                android:src="?attr/findSetting"/>
+
+            <ScrollView
+                android:id="@+id/find_scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/replace_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="@string/replace"
+                            android:imeOptions="flagNoExtractUi"
+                            android:singleLine="true"/>
+
+                        <ImageButton
+                            android:id="@+id/find_replace"
+                            style="?attr/findStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/replace_Next"
+                            android:src="?attr/replace"/>
+
+                        <ImageButton
+                            android:id="@+id/find_replaceAll"
+                            style="?attr/findStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/find_replaceAll"
+                            android:src="?attr/replaceAll"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical">
+
+                        <CheckBox
+                            android:id="@+id/isCaseSensitive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/isCaseSensitive"/>
+
+                        <CheckBox
+                            android:id="@+id/isWholeWord"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/isWholeWord"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">4dp</dimen>
+    <dimen name="tabwidth">64dp</dimen>
+    <dimen name="fabFontSize">14sp</dimen>
+    <dimen name="tabHostSize">-1px</dimen>
+    <dimen name="elevation">8dp</dimen>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="foreground">?android:attr/colorForeground</color>
+    <color name="background">?android:attr/colorBackground</color>
+    <color name="selection_foreground">?attr/selection_foreground</color>
+    <color name="selection_background">?attr/selection_background</color>
+
+    <color name="caret_foreground">#ffffff</color>
+    <color name="caret_background">?android:attr/colorForeground</color>
+    <color name="caret_disabled">#7f7f7f7f</color>
+    <color name="line_highlight">?android:attr/textColorHighlight</color>
+
+    <color name="non_printing_glyph">#7f7f7f7f</color>
+    <color name="comment">?android:attr/colorForeground</color>
+    <color name="keyword">?android:attr/colorAccent</color>
+    <color name="literal">?android:attr/colorActivatedHighlight</color>
+
+    <color name="secondary">@android:color/holo_purple</color>
+    <color name="linecolor">#00000000</color>
+    <color name="linetext">@color/material_blue_grey_950</color>
+    <color name="line_color">?android:attr/colorAccent</color>
+    <color name="char_color_r">#40be63</color>
+    <color name="char_color_g">#e29a08</color>
+    <color name="char_color_b">#d7522a</color>
+</resources>

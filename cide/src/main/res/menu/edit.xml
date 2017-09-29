@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:ignore="AppCompatResource">
+    <item
+        android:id="@+id/edit_moveLeft"
+        android:icon="?attr/moveLeft"
+        android:showAsAction="always"
+        android:title="@string/moveLeft"/>
+    <item
+        android:id="@+id/edit_moveRight"
+        android:icon="?attr/moveRight"
+        android:showAsAction="always"
+        android:title="@string/moveRight"/>
+    <item
+        android:id="@+id/edit_selectAll"
+        android:icon="?android:attr/actionModeSelectAllDrawable"
+        android:showAsAction="always"
+        android:title="@string/selectMore"/>
+    <item
+        android:id="@+id/edit_cut"
+        android:icon="?android:attr/actionModeCutDrawable"
+        android:showAsAction="always"
+        android:title="@string/cut"/>
+    <item
+        android:id="@+id/edit_copy"
+        android:icon="?android:attr/actionModeCopyDrawable"
+        android:showAsAction="always"
+        android:title="@string/copy"/>
+    <item
+        android:id="@+id/edit_paste"
+        android:icon="?android:attr/actionModePasteDrawable"
+        android:showAsAction="always"
+        android:title="@string/paste"/>
+</menu>

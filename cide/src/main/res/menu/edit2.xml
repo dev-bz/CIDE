@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:ignore="AppCompatResource">
+    <item
+        android:id="@+id/undo"
+        android:icon="?attr/edit_undo"
+        android:showAsAction="always"
+        android:title="@string/undo"/>
+    <item
+        android:id="@+id/redo"
+        android:icon="?attr/edit_redo"
+        android:showAsAction="always"
+        android:title="@string/redo"/>
+    <item
+        android:id="@+id/font_smaller"
+        android:icon="?attr/edit_font_minus"
+        android:showAsAction="always"
+        android:title="@string/smaller"/>
+    <item
+        android:id="@+id/font_larger"
+        android:icon="?attr/edit_font_plus"
+        android:showAsAction="always"
+        android:title="@string/larger"/>
+    <item
+        android:id="@+id/rename"
+        android:icon="?attr/edit_code_rename"
+        android:showAsAction="always"
+        android:title="@string/rename"/>
+    <item
+        android:id="@+id/repair"
+        android:icon="?attr/edit_code_fix"
+        android:showAsAction="always"
+        android:title="@string/repair"/>
+</menu>

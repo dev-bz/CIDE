@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/quickKeyBar"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="bottom|end"
+              android:layout_weight="1.0"
+              android:gravity="end"
+              android:orientation="vertical"
+              android:visibility="invisible">
+
+    <LinearLayout
+        android:id="@+id/quickKeyBarKeysContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:orientation="horizontal">
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/quickKeyBarList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/quickKeyBarCloseButton"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="toggleQuickBar"
+            android:scaleType="centerInside"
+            android:src="?icon_close_keys"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quickKeyBarOpenButtonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/quickKeyBarOpenButton"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="toggleQuickBar"
+            android:scaleType="centerInside"
+            android:src="?icon_open_keys"/>
+    </LinearLayout>
+</LinearLayout>

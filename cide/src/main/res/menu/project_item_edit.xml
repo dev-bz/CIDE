@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:ignore="AppCompatResource">
+    <item
+        android:id="@+id/item_selectAll"
+        android:showAsAction="always"
+        android:title="@string/selectAll"/>
+    <item
+        android:id="@+id/item_invSelect"
+        android:showAsAction="always"
+        android:title="@string/invSelect"/>
+    <item
+        android:id="@+id/item_delete"
+        android:showAsAction="always"
+        android:title="@string/delete"/>
+</menu>

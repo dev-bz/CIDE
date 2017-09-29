@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="org.free.cide">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name=".ide.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Light.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <!--
+            intent-filter>
+              <action android:name="android.intent.action.VIEW"/>
+              <category android:name="android.intent.category.DEFAULT"/>
+              <data android:mimeType="text/x-csrc"/>
+            </intent-filter>
+            <intent-filter>
+              <action android:name="android.intent.action.VIEW"/>
+              <category android:name="android.intent.category.DEFAULT"/>
+              <data android:mimeType="text/x-c++src"/>
+            </intent-filter
+                  -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern="/*.*\\.c"
+                    android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern="/*.*\\.cc"
+                    android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern="/*.*\\.cxx"
+                    android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern="/*.*\\.cpp"
+                    android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern="/*.*\\.h"
+                    android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern="/*.*\\.hpp"
+                    android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern="/*.*\\.hxx"
+                    android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern="/*.*\\.inc"
+                    android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern="/*.*\\.i"
+                    android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern="/*.*\\.cide"
+                    android:scheme="file"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:mimeType="text/*"
+                    android:scheme="file"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.termux.app.TermuxActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/termux"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.DeviceDefault.Light"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible">
+            <!--
+            intent-filter>
+              <action android:name="android.intent.action.MAIN" />
+              <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+              <action android:name="android.intent.action.MAIN" />
+              <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter
+                  -->
+        </activity>
+
+        <service
+            android:name="com.termux.app.TermuxService"
+            android:exported="false"/>
+
+        <activity
+            android:name="android.app.NativeActivity"
+            android:configChanges="keyboard"
+            android:label="Native"
+            android:launchMode="singleInstance"
+            android:process="org.libsdl.app">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="loader"/>
+        </activity>
+        <activity
+            android:name=".ide.ViewFileActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Light.NoActionBar"/>
+        <activity
+            android:name=".ide.CompileInfoActivity"
+            android:label="@string/action_out"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Light"/>
+        <activity
+            android:name="org.libsdl.app.SDLActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:process="org.libsdl.app"/>
+        <activity
+            android:name="org.libsdl.app.SDL2Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:process="org.libsdl.app">
+        </activity>
+
+        <!--<meta-data
+            android:name="BDAPPID"
+            android:value="8315793"/>
+        <meta-data
+            android:name="BDAPPKEY"
+            android:value="v46hi5TYRyGGzQWyucEWBtaWNjZMMAUx"/>
+
+        <activity
+            android:name="com.baidu.autoupdatesdk.ConfirmDialoigActivity"
+            android:exported="false"
+            android:screenOrientation="sensor"
+            android:theme="@style/bdp_update_dialog_style_fullscreen"/>
+        <receiver
+            android:name="com.baidu.autoupdatesdk.receiver.BDBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_NEW_UPDATE"/>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_DOWNLOAD_COMPLETE"/>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_NEW_AS"/>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_AS_DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>-->
+    </application>
+</manifest>

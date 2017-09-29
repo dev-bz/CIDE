@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_to_project"
+        android:title="@string/add_to_project"/>
+    <item
+        android:id="@+id/copy_path"
+        android:title="@string/copy_path"/>
+    <item
+        android:id="@+id/goto_dir"
+        android:title="@string/show_file"/>
+    <item
+        android:id="@+id/close_other"
+        android:title="@string/close_other"/>
+    <item
+        android:id="@+id/close_current"
+        android:title="@string/close_current"/>
+    <item
+        android:id="@+id/save"
+        android:title="@string/save"/>
+</menu>

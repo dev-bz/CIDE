@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cleanup"
+        android:title="@string/cleanup"/>
+    <item
+        android:id="@+id/copy_all"
+        android:title="@string/copy_all"/>
+    <item
+        android:id="@+id/language"
+        android:title="@string/languageCpp"/>
+</menu>

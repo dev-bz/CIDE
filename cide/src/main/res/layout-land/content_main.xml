@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/keyboardTest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="@bool/anim"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <include layout="@layout/find"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="@bool/anim"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0">
+
+            <org.free.cide.views.EditField
+                android:id="@+id/textField"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadeScrollbars="true"
+                android:scrollbars="vertical"
+                app:fastDraw="true"
+                app:selectEnd="65"
+                app:selectStart="45">
+
+                <requestFocus/>
+            </org.free.cide.views.EditField>
+        </FrameLayout>
+        <!--EditText
+          android:id="@+id/textField"
+          android:text="Some Text"
+          android:gravity="top"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/-->
+        <!--View android:layout_height="match_parent" android:layout_width="1dp" android:background="#7f7f7f7f"/-->
+        <FrameLayout
+            android:id="@+id/settings"
+            android:layout_width="@dimen/tabHostSize"
+            android:layout_height="match_parent"
+            android:background="?attr/colorPrimary"
+            android:elevation="@dimen/elevation"
+            android:visibility="gone">
+
+            <fragment
+                class="org.free.cide.ide.MainActivity$SettingFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
